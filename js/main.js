@@ -3,50 +3,50 @@ const productos = [
         id: 1,
         nombre: "Artisan Zero",
         precio: 49,
-        img: "../img/artizerodef.jpg"
+        img: "/preentrega-3-js/img/artizerodef.jpg"
         
     },
     {
         id: 2,
         nombre: "Esport Tiger Eba",
         precio: 39,
-        img: "../img/ebadef.jpg"
+        img: "/preentrega-3-js/img/ebadef.jpg"
     },
     {
         id: 3,
         nombre: "Cooler Master MP511",
         precio: 20,
-        img: "../img/mp511def.jpg"
+        img: "/preentrega-3-js/img/mp511def.jpg"
     },
     {
         id: 4,
         nombre: "Esport Tiger Mor",
         precio: 30,
-        img: "../img/tigermordef.jpg"
+        img: "/preentrega-3-js/img/tigermordef.jpg"
     },
     {
         id: 5,
         nombre: "Vancer Ice",
         precio: 45,
-        img: "../img/vancericedef.webp"
+        img: "/preentrega-3-js/img/vancericedef.webp"
     },
     {
         id: 6,
         nombre: "Vaxee PA Summer Edition",
         precio: 29,
-        img: "../img/vaxeepa2.jpg"
+        img: "/preentrega-3-js/img/vaxeepa2.jpg"
     },
     {
         id: 7,
         nombre: "Lethal Gaming Venus",
         precio: 33,
-        img: "../img/venusdef.jpg"
+        img: "/preentrega-3-js/img/venusdef.jpg"
     },
     {
         id: 8,
         nombre: "Esport Tiger Wuxiang",
         precio: 40,
-        img: "../img/wuxiangdef.jpg"
+        img: "/preentrega-3-js/img/wuxiangdef.jpg"
     },
 ]
 
