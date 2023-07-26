@@ -1,7 +1,7 @@
 const productos = [
     {
         id: 1,
-        nombre: "Artisan Zero",
+        nombre: "artisan zero",
         precio: 49,
         img: "/img/artizerodef.jpg"
     },
