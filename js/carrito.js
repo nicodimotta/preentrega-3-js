@@ -1,4 +1,3 @@
-
 let productosLS = localStorage.getItem("productos-carrito");
 productosLS = JSON.parse(productosLS);
 
