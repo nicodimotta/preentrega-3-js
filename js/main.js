@@ -52,12 +52,18 @@
 let productos = [];
 
 fetch('productos.json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Error al cargar los productos");
+        }
+        return response.json();
+    })
     .then(data => {
         productos = data;
         cargarProductos(productos);
         actualizarBotonesAgregar();
-    });
+    })
+    .catch(error => console.error("Se produjo un error: ", error));
 
 const carritoProductos = document.querySelector("#productos");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
