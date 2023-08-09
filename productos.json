@@ -3,7 +3,7 @@
         "id": 1,
         "nombre": "Artisan Zero",
         "precio": 49,
-        "img": "/preentrega-4-js/img/artizerodef.jpg"
+        "img": "img/artizerodef.jpg"
         
     },
     {
