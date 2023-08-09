@@ -1,4 +1,4 @@
-const productos = [
+/*const productos = [
     {
         id: 1,
         nombre: "Artisan Zero",
@@ -48,7 +48,16 @@ const productos = [
         precio: 40,
         img: "/preentrega-3-js/img/wuxiangdef.jpg"
     },
-]
+] */
+let productos = [];
+
+fetch('productos.json')
+    .then(response => response.json())
+    .then(data => {
+        productos = data;
+        cargarProductos(productos);
+        actualizarBotonesAgregar();
+    });
 
 const carritoProductos = document.querySelector("#productos");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
@@ -103,6 +112,12 @@ function agregarProductoCarrito(e){
         productoAgregar.cantidad = 1;
         productosEnCarrito.push(productoAgregar);
     }
+    $(`#${idBoton}`).parent().parent().fadeOut(800);
+    setTimeout(function(){ $(`#${idBoton}`).parent().parent().fadeIn(800); }, 800);
+
+    actualizarCantidad();
+    localStorage.setItem("productos-carrito", JSON.stringify(productosEnCarrito));
+
 
     actualizarCantidad();
 
